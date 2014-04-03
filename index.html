@@ -1,0 +1,1008 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>Pyladies Barcelona Bootstrap workshop</title>
+
+        <meta name="description" content="An introduction to Bootstrap, the most popular front-end framework for developing responsive, mobile first projects on the web.">
+        <meta name="author" content="Laura Pérez">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link rel="stylesheet" href="css/reveal.min.css">
+        <link rel="stylesheet" href="css/theme/pyladies.css" id="theme">
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+        <link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.css' rel='stylesheet' />
+
+        <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+        <script>
+            if( window.location.search.match( /print-pdf/gi ) ) {
+                var link = document.createElement( 'link' );
+                link.rel = 'stylesheet';
+                link.type = 'text/css';
+                link.href = 'css/print/pdf.css';
+                document.getElementsByTagName( 'head' )[0].appendChild( link );
+            }
+        </script>
+
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <div class="reveal">
+            <div class="slides">
+
+                <!-- cover 1 -->
+                <section>
+                    <div class="text_cell_render border-box-sizing rendered_html">
+                        <p>
+                            <img src="pyladies_logo.png" alt="Pyladies logo" width="20%" align="left" border="4" />
+                            <img src="pylady_geek.png" alt="Pyladies girl" width="20%" align="right" border="4" />
+                        </p>
+                        <br/><br/><br/><br/>
+                    </div>
+                    <h1>HTML & CSS</h1>
+                    <h2>Introduction</h2>
+                    <p>
+                        <small>By Mila Gerova</small>
+                    </p>
+                </section>
+
+                <section>
+                    <section>
+                        <div class="text_cell_render border-box-sizing rendered_html">
+                            <p>
+                                <img src="pyladies_logo.png" alt="Pyladies logo" width="20%" align="left" border="4" />
+                                <img src="pylady_geek.png" alt="Pyladies girl" width="20%" align="right" border="4" />
+                            </p>
+                            <br/><br/><br/>
+                        </div>
+                        <h2>What is HTML?</h2>
+                        <p>HTML is the code that allows us to build websites</p>
+                        <img width="70%" src = "html_code.png">
+                    </section>
+                    <section>
+                        <div class="text_cell_render border-box-sizing rendered_html">
+                            <p>
+                                <img src="pyladies_logo.png" alt="Pyladies logo" width="20%" align="left" border="4" />
+                                <img src="pylady_geek.png" alt="Pyladies girl" width="20%" align="right" border="4" />
+                            </p>
+                            <br/><br/><br/><br/>
+                        </div>
+                        <h2>Terms</h2>
+                        <ul>
+                            <li>
+                                <div class = "green">Web design</div>
+                                <div>The process of planning, structuring and creating a website</div>
+                            </li>
+                            <li>
+                                <div class = "green">Web development</div>
+                                <div>The process of programming dynamic web applications</div>
+                            </li>
+                            <li>
+                                <div class = "green">Front end</div>
+                                <div>The outwardly visible elements of a website or application</div>
+                            </li>
+                            <li>
+                                <div class = "green">Back end</div>
+                                <div>The inner workings and functionality of a website or application.</div>
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <div class="text_cell_render border-box-sizing rendered_html">
+                            <p>
+                                <img src="pyladies_logo.png" alt="Pyladies logo" width="20%" align="left" border="4" />
+                                <img src="pylady_geek.png" alt="Pyladies girl" width="20%" align="right" border="4" />
+                            </p>
+                            <br/><br/><br/><br/>
+                        </div>
+                        <h2>Tools</h2>
+                          <ul>
+                            <li>
+                              <div class = "yellow">Browser</div>
+                              <div>Chrome</div>
+                              <div>Firefox</div>
+                             </li>
+                             <li>
+                              <div class = "yellow">Development Toolkit</div>
+                              <div>Chrome - Inspector</div>
+                              <div>Firefox - Firebug</div>
+                             </li>
+                             <li>
+                              <div class = "yellow">Text Editor</div>
+                              <div>TextWrangler - Mac</div>
+                              <div>Notepad ++ - Windows</div>
+                              <div>Sublime Text - Linux, Mac or Windows</div>
+                              <div>gedit - Linux</div>
+                             </li>
+                          </ul>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <div class="text_cell_render border-box-sizing rendered_html">
+                            <p>
+                                <img src="pyladies_logo.png" alt="Pyladies logo" width="20%" align="left" border="4" />
+                                <img src="pylady_geek.png" alt="Pyladies girl" width="20%" align="right" border="4" />
+                            </p>
+                            <br/><br/><br/><br/>
+                        </div>
+                        <h2>Get Started: Folder Structure</h2>
+                          <p>All the files for your site should be stored within the same folder.</p>
+                          
+                          <div class="left" style="width: 45%; margin-top: 50px;">
+                              <div class = "blue"> Your Content</div>
+                              <div><span class = "blue">+ HTML: </span>Structure</div>
+                              <div><span class = "blue">+ CSS: </span>Presentation</div>
+                              <div class = "blue">= Your Website</div>
+
+                              <br/><br/><br/><p class="left-align"><small>Note: File names should not include spaces or special characters. File names ARE case sensitive.</small></p>
+                          </div>
+                          <div class="right" style="width: 45%;">
+                            <img src="folderstructure1.png" />
+                          </div>
+                    </section>
+                    
+                    <section>
+                        <div class="text_cell_render border-box-sizing rendered_html">
+                            <p>
+                                <img src="pyladies_logo.png" alt="Pyladies logo" width="20%" align="left" border="4" />
+                                <img src="pylady_geek.png" alt="Pyladies girl" width="20%" align="right" border="4" />
+                            </p>
+                            <br/><br/><br/><br/>
+                        </div>
+                        <h2>Anatomy of an HTML element</h2>
+                         <ul>
+                           <li>
+                             <strong class="blue">Element</strong>
+                             <ul>
+                               <li>An individual component of HTML</li>
+                               <li>Paragraph, heading, table, list, div, link, image, etc.</li>
+                              </ul>
+                          </li>
+                          <li>
+                            <strong class="blue">Tag</strong>
+                            <ul>
+                              <li>Marks the beginning &amp; end of an element</li>
+                               <li>Opening tag and Closing Tag
+                               <li>Tags contain characters that indicate the tags purpose</li>
+                                <pre><code class ="html">    &lt;tagname>Stuff in the middle&lt;/tagname></code></pre>
+                              </li>
+                               <li>
+                                    <pre><code class ="html">    &lt;p> This is a sample paragraph.&lt;/p></code></pre>
+                              </li>
+                            </ul>
+                    </section>
+                    
+                    <section>
+                        <div class="text_cell_render border-box-sizing rendered_html">
+                            <p>
+                                <img src="pyladies_logo.png" alt="Pyladies logo" width="20%" align="left" border="4" />
+                                <img src="pylady_geek.png" alt="Pyladies girl" width="20%" align="right" border="4" />
+                            </p>
+                            <br/><br/><br/><br/>
+                        </div>
+                        <h2>Anatomy of an HTML element</h2>
+                        <ul>
+                            <li>
+                                <strong class="blue">Attribute</strong>
+                                <ul>
+                                    <li>Provides additional information about the HTML element</li>
+                                    <li>Class, ID, language, style, identity, source</li>
+                                    <li>Placed inside an opening tag, before the right angle bracket.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong class="blue">Value</strong>
+                                <ul>
+                                <li>Value is the value assigned to a given attribute.</li>
+                                <li>Values must be contained inside quotation marks.</li>
+                                <li>
+<pre><code class ="html">
+    &lt;div id="copyright">&copy; GDI 2013&lt;/div>
+    &lt;img src="my_picture.jpg" /> 
+    &lt;a href="http://girldevelopit.com">GDI&lt;/a>
+
+</code></pre>
+                          </li>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <div class="text_cell_render border-box-sizing rendered_html">
+                            <p>
+                                <img src="pyladies_logo.png" alt="Pyladies logo" width="20%" align="left" border="4" />
+                                <img src="pylady_geek.png" alt="Pyladies girl" width="20%" align="right" border="4" />
+                            </p>
+                            <br/><br/><br/><br/>
+                        </div>
+                        <h2>Example</h2>
+                        <img width="80%" src = "html_code.png">
+                    </section>
+
+                    <section>
+                        <div class="text_cell_render border-box-sizing rendered_html">
+                            <p>
+                                <img src="pyladies_logo.png" alt="Pyladies logo" width="20%" align="left" border="4" />
+                                <img src="pylady_geek.png" alt="Pyladies girl" width="20%" align="right" border="4" />
+                            </p>
+                            <br/><br/><br/><br/>
+                        </div>
+                        <h2>Nesting</h2>
+                          <p>All elements "nest" inside one another</p>
+                          <p><small>Nesting is what happens when you put other containing tags inside other containing tags. For example, you would put the &lt;p> inside of the &lt;body> tags. The &lt;p> is now nested inside the &lt;body></small></p>
+    <pre><code>
+    &lt;body&gt;
+        &lt;p&gt;A paragraph inside the body tag&lt;/p&gt;
+    &lt;/body&gt;
+
+    </code></pre>
+                          
+                          <p>Whichever element OPENS first CLOSES last</p>
+
+    <pre><code>
+    &lt;ul&gt;
+        &lt;li&gt;
+            &lt;p&gt;A paragraph inside a list item&lt;/p&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+
+    </code></pre>
+                    </section> 
+
+                    <section>
+                        <div class="text_cell_render border-box-sizing rendered_html">
+                            <p>
+                                <img src="pyladies_logo.png" alt="Pyladies logo" width="20%" align="left" border="4" />
+                                <img src="pylady_geek.png" alt="Pyladies girl" width="20%" align="right" border="4" />
+                            </p>
+                            <br/><br/><br/><br/>
+                        </div>
+                        <h3>Block vs Inline</h3>
+                          <div class = "left" style="width: 50%; text-align: left;">
+                            <br/><br/>
+                            <ul>
+                                <li>After block elements, browsers render a new line.<br/><br/></li>
+                                <li>Block elements: p, h1, ul, li, almost everything else<br/><br/></li>
+                                <li>Inline elements: img, a, br, em, strong</li>
+                              </ul>
+                          </div>
+                          <div class="right">
+                            <img src="example-blockinline.png" alt="example of inline and block elements" />
+                          </div>
+                    </section>
+
+
+                    <section>
+                        <div class="text_cell_render border-box-sizing rendered_html">
+                            <p>
+                                <img src="pyladies_logo.png" alt="Pyladies logo" width="20%" align="left" border="4" />
+                                <img src="pylady_geek.png" alt="Pyladies girl" width="20%" align="right" border="4" />
+                            </p>
+                            <br/><br/><br/><br/>
+                        </div>
+                        <h2>ELEMENT: DIV</h2>
+                        <ul>
+                            <li>Block level element. Each new div is rendered on a new line.</li>
+                            <li>A division, or section of content within an HTML page.</li>
+                            <li>Used to group elements to format them with CSS.</li>
+                            <li>Apply IDs and Classes to divs to control their styles with CSS.</li>
+                        </ul>
+<pre><code>    &lt;div>
+        &lt;p>Content&lt;p>
+        &lt;p>Content&lt;p>
+    &lt;/div>
+</code></pre>
+<pre><code>    &lt;div id="header">
+        &lt;h1>Main Heading&lt;h1>
+    &lt;/div>
+</code></pre>
+<pre><code>    &lt;div class="sub-content">
+        &lt;p>Some more content&lt;p>
+    &lt;/div>
+</code></pre>
+                    </section>
+
+                    <section>
+                        <div class="text_cell_render border-box-sizing rendered_html">
+                            <p>
+                                <img src="pyladies_logo.png" alt="Pyladies logo" width="20%" align="left" border="4" />
+                                <img src="pylady_geek.png" alt="Pyladies girl" width="20%" align="right" border="4" />
+                            </p>
+                            <br/><br/><br/><br/>
+                        </div>
+                        <h2>Element: span</h2>
+                        <ul>
+                        <li>Inline element. Each new span is rendered next to each other &amp; only wraps when it reaches the edge of the containing element.</li>
+                        <li>Can be used to apply styles to text inline so as not to break the flow of content.</li>
+                        </ul>
+                        <pre><code class ="html">    &lt;p>Paragraph with &lt;span class="yellow">yellow&lt;/span> text.&lt;/p>
+</code></pre>
+
+<p>Paragraph with <span class="yellow">yellow</span> text.</p>
+
+                    </section>
+
+
+                    <section>
+                        <div class="text_cell_render border-box-sizing rendered_html">
+                            <p>
+                                <img src="pyladies_logo.png" alt="Pyladies logo" width="20%" align="left" border="4" />
+                                <img src="pylady_geek.png" alt="Pyladies girl" width="20%" align="right" border="4" />
+                            </p>
+                            <br/><br/><br/><br/>
+                        </div>
+                        <h2>Examples</h2>
+                        <h4>(to be used in the practice part later on)</h4>
+<pre><code>
+    &lt;a href="http://www.girldevelopit.com" title="Girl Develop It Homepage">GDI&lt;/a>
+
+</code></pre>
+<pre><code>
+    &lt;img src ="http://girldevelopit.com/pink-logo.png" alt = "Logo"/>
+
+</code></pre>
+<pre><code>
+    &lt;p>
+        A paragraph with &lt;em>Emphasized&lt;/em> text and &lt;strong>Important&lt;/strong> text.
+    &lt;/p>
+
+</code></pre>
+
+                    </section>
+
+                    <section>
+                        <div class="text_cell_render border-box-sizing rendered_html">
+                            <p>
+                                <img src="pyladies_logo.png" alt="Pyladies logo" width="20%" align="left" border="4" />
+                                <img src="pylady_geek.png" alt="Pyladies girl" width="20%" align="right" border="4" />
+                            </p>
+                            <br/><br/><br/><br/>
+                        </div>
+                        <h3>Element: Unordered and ordered lists</h3>
+                        <div>
+                              <div class = "left" style = "width:50%">
+<pre><code>
+    &lt;ul>
+        &lt;li>List Item&lt;/li>
+        &lt;li>AnotherList Item&lt;/li>
+    &lt;/ul>
+
+</code></pre>
+<pre><code>
+    &lt;ol>
+        &lt;li>List Item&lt;/li>
+        &lt;li>AnotherList Item&lt;/li>
+    &lt;/ol>
+
+</code></pre>
+                              </div>
+                              <div class = "left" style = "width:50%">
+                                <p>Unordered list (bullets)
+                                <ul>
+                                  <li>List Item</li>
+                                  <li>AnotherList Item</li>
+                                </ul>
+                                <br/>
+                                <br/>
+                                <p>Ordered list (sequence)
+                                <ol>
+                                  <li>List Item</li>
+                                  <li>AnotherList Item</li>
+                                </ol>
+                              </div>
+                              <div class ="clear"></div>
+                              </div>
+                    </section>
+
+                    <section>
+                        <div class="text_cell_render border-box-sizing rendered_html">
+                            <p>
+                                <img src="pyladies_logo.png" alt="Pyladies logo" width="20%" align="left" border="4" />
+                                <img src="pylady_geek.png" alt="Pyladies girl" width="20%" align="right" border="4" />
+                            </p>
+                            <br/><br/><br/><br/>
+                        </div>
+                        <h2>Tables</h2>
+                        <p>Tables are a way to represent complex information in a grid format.</p>
+                          <p>Tables are made up of rows and columns.</p>
+                          
+                          <div>
+                          <div class = "left" style = "width:50%">
+<pre><code>
+    &lt;table>
+        &lt;tr> 
+            &lt;th>Head&lt;/th>
+            &lt;th>Head&lt;/th>
+        &lt;/tr>
+        &lt;tr> 
+            &lt;td>Data&lt;/td>
+            &lt;td>Data&lt;/td>
+        &lt;/tr>
+    &lt;/table>
+
+</code></pre>
+                          </div>
+                          <div class = "left left-align" style = "width:50%; padding-top: 50px;">
+                            <table style="border: 1px solid">
+                              <tr> 
+                                <th style="border: 1px solid">Head</th>
+                                <th style="border: 1px solid">Head</th>
+                              </tr>
+                              <tr> 
+                                <td style="border: 1px solid">Data</td>
+                                <td style="border: 1px solid">Data</td>
+                              </tr>
+                            </table>
+                          </div>
+                          <div class ="clear"></div>
+                          </div>
+                    </section>
+
+                    <section>
+                        <div class="text_cell_render border-box-sizing rendered_html">
+                            <p>
+                                <img src="pyladies_logo.png" alt="Pyladies logo" width="20%" align="left" border="4" />
+                                <img src="pylady_geek.png" alt="Pyladies girl" width="20%" align="right" border="4" />
+                            </p>
+                            <br/><br/><br/><br/>
+                        </div>
+                        <h2>Box model</h2>
+                        <img width="60%" src="box-model.png" />
+                    </section>
+
+                    <section>
+                        <div class="text_cell_render border-box-sizing rendered_html">
+                            <p>
+                                <img src="pyladies_logo.png" alt="Pyladies logo" width="20%" align="left" border="4" />
+                                <img src="pylady_geek.png" alt="Pyladies girl" width="20%" align="right" border="4" />
+                            </p>
+                            <br/><br/><br/><br/>
+                        </div>
+                        <h2>Padding</h2>
+<pre><code>
+    padding: 10px 20px 30px 40px;
+
+</code></pre>
+                        <img width="60%" src="box-model-padding2.png" />
+                    </section>
+
+                </section>
+
+                <section>
+                    <section>
+                        <div class="text_cell_render border-box-sizing rendered_html">
+                            <p>
+                                <img src="pyladies_logo.png" alt="Pyladies logo" width="20%" align="left" border="4" />
+                                <img src="pylady_geek.png" alt="Pyladies girl" width="20%" align="right" border="4" />
+                            </p>
+                            <br/><br/><br/>
+                        </div>
+                        <h2>CSS: what is it?</h2>
+                        <p>CSS = <span class="purple">C</span>ascading <span class="purple">S</span>tyle <span class="purple">S</span>heets</p>
+                        <p>CSS is a "style sheet language" that lets you style the elements on your page.</p>
+                        <p>CSS is works in conjunction with HTML, but is not HTML itself.</p>
+                    </section>
+                    <section>
+                        <div class="text_cell_render border-box-sizing rendered_html">
+                            <p>
+                                <img src="pyladies_logo.png" alt="Pyladies logo" width="20%" align="left" border="4" />
+                                <img src="pylady_geek.png" alt="Pyladies girl" width="20%" align="right" border="4" />
+                            </p>
+                            <br/><br/><br/><br/>
+                        </div>
+                        <h2>CSS: what does it look like?</h2>
+<pre><code class = "html">
+    p {
+        color: blue;
+        font-family: 'Helvetica';
+    }
+    .red {
+        color: red;
+    }
+    #special {
+        font-family: Arial;
+    }
+
+</code></pre>
+
+<pre><code class = "html">
+    &lt;p>Paragraph&lt;/p>
+    &lt;p class="green">Paragraph&lt;/p>
+    &lt;p class="red">Paragraph&lt;/p>
+    &lt;p class="red" id="special">Paragraph&lt;/p>
+
+</code></pre>
+
+                    </section>
+                    <section>
+                        <div class="text_cell_render border-box-sizing rendered_html">
+                            <p>
+                                <img src="pyladies_logo.png" alt="Pyladies logo" width="20%" align="left" border="4" />
+                                <img src="pylady_geek.png" alt="Pyladies girl" width="20%" align="right" border="4" />
+                            </p>
+                            <br/><br/><br/><br/>
+                        </div>
+                        <h2>CSS Syntax</h2>                          
+<pre><code class = "html">
+    selector {
+        property: value;
+    }
+
+</code></pre>
+                        <img width="60%" src="cssrule.png" />
+                        
+                    </section>
+                    <section>
+                        <div class="text_cell_render border-box-sizing rendered_html">
+                            <p>
+                                <img src="pyladies_logo.png" alt="Pyladies logo" width="20%" align="left" border="4" />
+                                <img src="pylady_geek.png" alt="Pyladies girl" width="20%" align="right" border="4" />
+                            </p>
+                            <br/><br/><br/><br/>
+                        </div>
+                        <h2>Selector: id and class</h2>
+<pre><code class = "html">
+    #footer {
+        property: value;
+    }
+
+</code></pre>
+<pre><code class = "html">
+    &lt;p id="footer">Copyright 2011&lt;/p>
+
+</code></pre>
+<pre><code class = "html">
+    .warning {
+        color: red;
+    }
+
+</code></pre>
+<pre><code class = "html">
+    &lt;p class="warning">Run away!&lt;/p>
+
+</code></pre>
+                        
+                    </section>
+                    <section>
+                        <div class="text_cell_render border-box-sizing rendered_html">
+                            <p>
+                                <img src="pyladies_logo.png" alt="Pyladies logo" width="20%" align="left" border="4" />
+                                <img src="pylady_geek.png" alt="Pyladies girl" width="20%" align="right" border="4" />
+                            </p>
+                            <br/><br/><br/><br/>
+                        </div>
+                        <h2>Property Values</h2>
+
+<pre><code class = "html">
+    p {
+      color: white;
+      background-color: red;
+      font-family: Arial, sans-serif;
+    }
+
+</code></pre>
+
+<pre><code class = "html">
+    p {
+      color: red;
+      color: #ff0000;
+      color: rgb(255, 0, 0);
+    }
+
+</code></pre>
+
+<pre><code class = "html">
+    p {
+      font-style: italic;
+      font-weight: bold;
+      font-size: 10px;
+      font-family: sans-serif;
+    }
+
+</code></pre>
+                        
+                    </section>
+                    <section>
+                        <div class="text_cell_render border-box-sizing rendered_html">
+                            <p>
+                                <img src="pyladies_logo.png" alt="Pyladies logo" width="20%" align="left" border="4" />
+                                <img src="pylady_geek.png" alt="Pyladies girl" width="20%" align="right" border="4" />
+                            </p>
+                            <br/><br/><br/><br/>
+                        </div>
+                        <h2>Connecting CSS to HTML</h2>
+                        <small>INLINE:</small>
+<pre style="margin-top: -15px;"><code class = "html">
+    &lt;p style="color:red">Some text.&lt;/p>
+
+</code></pre>
+                        <small>EMBEDDED:</small>
+<pre style="margin-top: -15px;"><code class = "html">
+    &lt;head>
+        &lt;style type="text/css">
+            p {
+                color: blue;
+                font-size: 12px;
+            }
+        &lt;/style>
+    &lt;/head>
+
+</code></pre>
+                        <small>LINKED:</small>
+<pre style="margin-top: -15px;"><code class = "html">
+    &lt;head>
+        &lt;link rel="stylesheet" type="text/css" href="style.css">
+    &lt;/head>
+
+</code></pre>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <div class="text_cell_render border-box-sizing rendered_html">
+                            <p>
+                                <img src="pyladies_logo.png" alt="Pyladies logo" width="20%" align="left" border="4" />
+                                <img src="pylady_geek.png" alt="Pyladies girl" width="20%" align="right" border="4" />
+                            </p>
+                            <br/><br/><br/>
+                        </div>
+                        <h2>What does JavaScript do?</h2>
+                          <ul>
+                            <li><a href = "http://fancyapps.com/fancybox/#examples" target = '_blank'>Image Galleries and Lightboxes</a></li>
+                            <li><a href = "https://www.google.com/doodles/30th-anniversary-of-pac-man" target = '_blank'>Games and all sorts of Google Doodles</a></li>
+                            <li><a href = "http://www.girldevelopit.com/materials" target = '_blank'>Interactions, like show/hide and accordians</a></li>
+                            <li><a href = "http://www.girldevelopit.com/classes" target = '_blank'>Retrieving data from other websites (through APIs)</a></li>
+                          </ul>
+                    </section>
+
+                    <section>
+                        <div class="text_cell_render border-box-sizing rendered_html">
+                            <p>
+                                <img src="pyladies_logo.png" alt="Pyladies logo" width="20%" align="left" border="4" />
+                                <img src="pylady_geek.png" alt="Pyladies girl" width="20%" align="right" border="4" />
+                            </p>
+                            <br/><br/><br/><br/>
+                        </div>
+                        <h2>Example</h2>
+<pre><code contenteditable class ="javascript">
+    alert("hi there");
+
+</code></pre>
+<pre><code contenteditable class ="javascript">
+    var age = 20;
+    if (age >= 35) {
+        console.log('You can vote AND hold any place in government!');
+    } else if (age >= 25) {
+        console.log('You can vote AND run for the Senate!');
+    } else if (age >= 18) {
+        console.log('You can vote!');
+    } else {
+        console.log('You have no voice in government (yet)!');
+    }
+
+</code></pre>
+
+                    </section>
+
+                </section>
+
+                <section>
+                    <div class="text_cell_render border-box-sizing rendered_html">
+                        <img style="float: right; margin-left: 40px;" src="gdi_logo.png" width="40%" alt="Girl develop it" align="right" border="4" />
+                        <p><img src="pink-logo.png" width="40%" alt="Girl develop it" align="left top" border="4" /></p>
+                        <p><h3>Empowering women of diverse backgrounds from around the world to learn how to develop software</h3></p>
+                        
+                        
+                    </div>
+                </section>
+
+                <section>
+                    <img src="pylady_geek.png" width="70%" alt="Pyladies girl" />
+                    <a href="http://jsfiddle.net/" target="_blank"><h1>Practice time!</h1></a>
+                </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <!-- cover 2 -->
+                <section>
+                    <div class="text_cell_render border-box-sizing rendered_html">
+                        <p>
+                            <img src="pyladies_logo.png" alt="Pyladies logo" width="20%" align="left" border="4" />
+                            <img src="pylady_geek.png" alt="Pyladies girl" width="20%" align="right" border="4" />
+                        </p>
+                        <br/><br/><br/><br/>
+                    </div>
+                    <h1>Bootstrap</h1>
+                    <h3>The most popular front-end framework for developing responsive, mobile first projects on the web.</h3>
+                    <p>
+                        <small>By Laura Pérez <a href="http://twitter.com/lpmayos">@lpmayos</a></small>
+                    </p>
+                </section>
+
+                <!-- frameworks -->
+                <section>
+                    <section>
+                        <div class="text_cell_render border-box-sizing rendered_html">
+                            <p>
+                                <img src="pyladies_logo.png" alt="Pyladies logo" width="20%" align="left" border="4" />
+                                <img src="pylady_geek.png" alt="Pyladies girl" width="20%" align="right" border="4" />
+                            </p>
+                            <br/><br/><br/><br/>
+                        </div>
+                        <h2>Why do we need to use a framework?</h2>
+                        <ul><!--  class="fragment" data-fragment-index="0"> -->
+                            <li>faster, easier and stronger front-end development</li>
+                            <li>for all devices</li>
+                            <li>for everybody</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <div class="text_cell_render border-box-sizing rendered_html">
+                            <p>
+                                <img src="pyladies_logo.png" alt="Pyladies logo" width="20%" align="left" border="4" />
+                                <img src="pylady_geek.png" alt="Pyladies girl" width="20%" align="right" border="4" />
+                            </p>
+                            <br/><br/><br/><br/>
+                        </div>
+                        <h2>Wait, ok... what exactly is a front-end framework?</h2>
+                        <p>Frontend frameworks usually consist of a package made up of a structure of files and folders of standardized code (HTML, CSS, JS documents etc.)</p>
+                    </section>
+                    <section>
+                        Include it in your project to <span style="font-style: italic;">automagically</span> have a lot of stuff ready to use:<br/><br/>
+                        <ul>
+                            <li>a fantastic <strong>grid system</strong> ready to work in all devices <small>(for creating page layouts through a series of rows and columns that house your content)</small></li>
+                            <li>a lot of awesome <strong>css styles</strong>: headers, navigation menus, colors, beautiful forms...</li>
+                            <li>great <strong>javascript resources</strong>: modals, carousels, alerts...</li>
+                            <li>...</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <div class="text_cell_render border-box-sizing rendered_html">
+                            <p>
+                                <img src="pyladies_logo.png" alt="Pyladies logo" width="20%" align="left" border="4" />
+                                <img src="pylady_geek.png" alt="Pyladies girl" width="20%" align="right" border="4" />
+                            </p>
+                            <br/><br/><br/><br/>
+                        </div>
+                        <h2>And why Bootstrap?</h2>
+                        <ul><!--  class="fragment" data-fragment-index="0"> -->
+                            <li>easy and fun :)</li>
+                            <li>beautiful, intuitive and powerful</li>
+                            <li>well documented</li>
+                            <li>sass and less support</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <div class="text_cell_render border-box-sizing rendered_html">
+                            <p>
+                                <img src="pyladies_logo.png" alt="Pyladies logo" width="20%" align="left" border="4" />
+                                <img src="pylady_geek.png" alt="Pyladies girl" width="20%" align="right" border="4" />
+                            </p>
+                            <br/><br/><br/><br/>
+                        </div>
+                        <h2>take a look at others:</h2>
+                        <dl><!--  class="fragment" data-fragment-index="0"> -->
+                            <dt><strong>Zurb Foundation (nice web!)</strong></dt>
+                            <dd>http://foundation.zurb.com</dd>
+                            <dt><strong>Skeleton</strong></dt>
+                            <dd>http://www.getskeleton.com/</dd>
+                            <dt><strong>HTML5 Boilerplate</strong></dt>
+                            <dd>http://html5boilerplate.com/</dd>
+                            <dt><strong>HTML KickStart</strong></dt>
+                            <dd>http://www.99lime.com</dd>
+                            <dd>...</dd>
+                        </dl>
+                    </section>
+                </section>
+
+                <!-- getting started -->
+                <!-- <section>
+                    <section>
+                        <div class="text_cell_render border-box-sizing rendered_html">
+                            <p>
+                                <img src="pyladies_logo.png" alt="Pyladies logo" width="20%" align="left" border="4" />
+                                <img src="pylady_geek.png" alt="Pyladies girl" width="20%" align="right" border="4" />
+                            </p>
+                            <br/><br/><br/><br/>
+                        </div>
+                        <h2>Getting started</h2><br/>
+                        <p>On the Bootstrap website, http://getbootstrap.com/, you'll find the different ways to get started.</p>
+                        <p>I'll show you one of them :)</p>
+                    </section>
+                    <section>
+                        <div class="text_cell_render border-box-sizing rendered_html">
+                            <p>
+                                <img src="pyladies_logo.png" alt="Pyladies logo" width="20%" align="left" border="4" />
+                                <img src="pylady_geek.png" alt="Pyladies girl" width="20%" align="right" border="4" />
+                            </p>
+                            <br/><br/><br/><br/>
+                        </div>
+                        <ol>
+                            <li>download the compiled and minified version ("Download Bootstrap" button on the "getting started" section)</li>
+                            <li>on your computer, create an empty folder with and .html file, and copy&paste the basic template code you'll find on the same "getting started" section.</li>
+                            <li>inside the folder, place the css, fonts and js folders you just downloaded</li>
+                        </ol>
+                    </section>
+                    <section>
+                        <div class="text_cell_render border-box-sizing rendered_html">
+                            <p>
+                                <img src="pyladies_logo.png" alt="Pyladies logo" width="20%" align="left" border="4" />
+                                <img src="pylady_geek.png" alt="Pyladies girl" width="20%" align="right" border="4" />
+                            </p>
+                            <br/><br/><br/><br/>
+                        </div>
+                        <p><strong>And that's it, you can work on your html file and open it in your browser :)</strong></p>
+                        <img src="basic_structure.png" alt="Basic structure" />
+                    </section>
+                </section> -->
+
+                <!-- bootstrap -->
+                <section>
+                    <section>
+                        <div class="text_cell_render border-box-sizing rendered_html">
+                            <p>
+                                <img src="pyladies_logo.png" alt="Pyladies logo" width="20%" align="left" border="4" />
+                                <img src="pylady_geek.png" alt="Pyladies girl" width="20%" align="right" border="4" />
+                            </p>
+                            <br/><br/><br/><br/>
+                        </div>
+                        <h2>Great, what does Bootstrap offer?</h2><br/>
+                        <p>Let's take a look at the Bootstrap website to see what kind of resources we can use.</p>
+                    </section>
+                    <section>
+                        <div class="text_cell_render border-box-sizing rendered_html">
+                            <p>
+                                <img src="pyladies_logo.png" alt="Pyladies logo" width="20%" align="left" border="4" />
+                                <img src="pylady_geek.png" alt="Pyladies girl" width="20%" align="right" border="4" />
+                            </p>
+                            <br/><br/><br/><br/>
+                        </div>
+                        <h2>CSS</h2><br/>
+                        <ul>
+                            <li>responsive grid system</li>
+                            <li>media queries</li>
+                            <li>typography</li>
+                            <li>code, tables, forms, buttons, images...</li>
+                            <li>responsive utilities</li>
+                            <li>less/sass (we won't talk about this today, but feel free to ask!)</li>
+                        </ul>
+                        <p><a href="http://getbootstrap.com/css" target="_blank">Let's take a look</a></p>
+                    </section>
+                    <section>
+                        <div class="text_cell_render border-box-sizing rendered_html">
+                            <p>
+                                <img src="pyladies_logo.png" alt="Pyladies logo" width="20%" align="left" border="4" />
+                                <img src="pylady_geek.png" alt="Pyladies girl" width="20%" align="right" border="4" />
+                            </p>
+                            <br/><br/><br/><br/>
+                        </div>
+                        <h2>Components</h2><br/>
+                        <ul>
+                            <li>glyphicons</li>
+                            <li>dropdowns</li>
+                            <li>buttons</li>
+                            <li>navbars</li>
+                            <li>pagination</li>
+                            <li>alerts</li>
+                            <li>...</li>
+                        </ul>
+                        <p><a href="http://getbootstrap.com/components" target="_blank">Let's take a look</a></p>
+                    </section>
+                    <section>
+                        <div class="text_cell_render border-box-sizing rendered_html">
+                            <p>
+                                <img src="pyladies_logo.png" alt="Pyladies logo" width="20%" align="left" border="4" />
+                                <img src="pylady_geek.png" alt="Pyladies girl" width="20%" align="right" border="4" />
+                            </p>
+                            <br/><br/><br/><br/>
+                        </div>
+                        <h2>Javascript</h2><br/>
+                        <ul>
+                            <li>carousel</li>
+                            <li>modal</li>
+                            <li>dropdown</li>
+                            <li>scrollspy</li>
+                            <li>tooltip</li>
+                            <li>...</li>
+                        </ul>
+                        <p><a href="http://getbootstrap.com/javascript" target="_blank">Let's take a look</a></p>
+                    </section>
+                </section>
+
+                <section>
+                    <img src="pylady_geek.png" width="70%" alt="Pyladies girl" />
+                    <a href="http://www.bootply.com/" target="_blank"><h1>Practice time!</h1></a>
+                </section>
+
+                <!-- end -->
+                <section>
+                    <img src="pylady_geek.png" width="70%" alt="Pyladies girl" />
+                    <h1>Thank you :)</h1><br/>
+                    <h3>questions, complaints and beers are welcome</h3>
+                </section>
+
+            </div>
+
+        </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.min.js"></script>
+        <script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.js'></script>
+
+        <script>
+
+            // Full list of configuration options available here:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+
+                theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+                transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+                // Parallax scrolling
+                // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+                // parallaxBackgroundSize: '2100px 900px',
+
+                // Optional libraries used to extend on reveal.js
+                dependencies: [
+                    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+                ]
+            });
+
+        </script>
+
+    </body>
+</html>

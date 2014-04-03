@@ -1,0 +1,196 @@
+@import url(https://fonts.googleapis.com/css?family=News+Cycle:400,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Glegoo|Quicksand:300,400,700|Droid+Serif:400,700,400italic,700italic|Raleway:400,200,300,500,600,700);
+/**
+ * A pyladies theme for reveal.js presentations, similar
+ * to the default theme. The accent color is rgb(255, 50, 50).
+ *
+ * reveal.js is Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+/*********************************************
+ * GLOBAL STYLES
+ *********************************************/
+body {
+  background: white;
+  background-color: white; 
+}
+
+.reveal {
+  font-family:'Quicksand',sans-serif;;
+  font-size: 30px;
+  font-weight: normal;
+  letter-spacing: -0.02em;
+  color: black; }
+
+::selection {
+  color: white;
+  background: rgba(0, 0, 0, 0.99);
+  text-shadow: none; }
+
+/*********************************************
+ * HEADERS
+ *********************************************/
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  margin: 0 0 20px 0;
+  color: #444444;
+  font-family: 'Glegoo', serif;
+  line-height: 0.9em;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  text-shadow: none; }
+
+.reveal h1 {
+  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2); }
+
+/*********************************************
+ * LINKS
+ *********************************************/
+.reveal a:not(.image) {
+  color: rgb(255, 50, 50);
+  border-bottom: 1px dashed #aaa;
+  -webkit-transition: color .15s ease;
+  -moz-transition: color .15s ease;
+  -ms-transition: color .15s ease;
+  -o-transition: color .15s ease;
+  transition: color .15s ease; }
+
+.reveal a:not(.image):hover {
+  color: rgb(255, 50, 50);
+  text-shadow: none;
+  border: none; }
+
+.reveal .roll span:after {
+  color: #fff;
+  background: #00003f; }
+
+/*********************************************
+ * IMAGES
+ *********************************************/
+.reveal section img {
+  margin: 15px 0px;
+  background: rgba(255, 255, 255, 0.12);
+ }
+
+.reveal a:hover img {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgb(255, 50, 50);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
+
+/*********************************************
+ * NAVIGATION CONTROLS
+ *********************************************/
+.reveal .controls div.navigate-left,
+.reveal .controls div.navigate-left.enabled {
+  border-right-color: rgb(255, 50, 50); }
+
+.reveal .controls div.navigate-right,
+.reveal .controls div.navigate-right.enabled {
+  border-left-color: rgb(255, 50, 50); }
+
+.reveal .controls div.navigate-up,
+.reveal .controls div.navigate-up.enabled {
+  border-bottom-color: rgb(255, 50, 50); }
+
+.reveal .controls div.navigate-down,
+.reveal .controls div.navigate-down.enabled {
+  border-top-color: rgb(255, 50, 50); }
+
+.reveal .controls div.navigate-left.enabled:hover {
+  border-right-color: rgb(255, 75, 75); }
+
+.reveal .controls div.navigate-right.enabled:hover {
+  border-left-color: rgb(255, 75, 75); }
+
+.reveal .controls div.navigate-up.enabled:hover {
+  border-bottom-color: rgb(255, 75, 75); }
+
+.reveal .controls div.navigate-down.enabled:hover {
+  border-top-color: rgb(255, 75, 75); }
+
+/*********************************************
+ * PROGRESS BAR
+ *********************************************/
+.reveal .progress {
+  background: rgba(0, 0, 0, 0.2); }
+
+.reveal .progress span {
+  background: rgb(255, 50, 50);
+  -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -ms-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -o-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
+
+/*********************************************
+ * SLIDE NUMBER
+ *********************************************/
+.reveal .slide-number {
+  color: rgb(255, 50, 50); }
+
+/*********************************************
+ * PERSONALIZED PYLADIES
+ *********************************************/
+.div.text_cell_render {
+  outline: none;
+  resize: none;
+  width: inherit;
+  border-style: none;
+  padding: 5px;
+  color: #000000;
+  }
+/*********************************************
+ * TRANSITION PYLADIES
+ *********************************************/
+
+.reveal.cube .slides section:not(.stack):before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: white;
+  border-radius: 4px;
+  -webkit-transform: translateZ(-20px);
+  -moz-transform: translateZ(-20px);
+  -ms-transform: translateZ(-20px);
+  -o-transform: translateZ(-20px);
+  transform: translateZ(-20px);
+}
+
+
+
+
+
+
+
+
+.left { float: left; }
+.right { float: right; }
+
+.yellow {
+color: #EDAB23;
+}
+.green {
+color: #92BB44;
+}
+.purple {
+color: #FF6464;
+}
+
+
+
+
+
+
+
+/*@font-face{font-family:"Gotham";src:local("Gotham"),url("fonts/Gotham/Gotham-Medium.otf") format("opentype");font-weight:normal;font-style:normal}@font-face{font-family:"Gotham-Book";src:local("Gotham-Book"),url("fonts/Gotham/Gotham-Book.otf") format("opentype");font-weight:normal;font-style:normal}@font-face{font-family:"Gotham-Italic";src:local("Gotham-Italic"),url("fonts/Gotham/Gotham-MediumItalic.otf") format("opentype");font-weight:normal;font-style:italic}@font-face{font-family:"Gotham-Bold";src:local("Gotham-Bold"),url("fonts/Gotham/Gotham-Bold.otf") format("opentype");font-weight:bold;font-style:bold}body{background:#1c1e20;background:-moz-radial-gradient(center, circle cover, #555a5f 0%, #1c1e20 100%);background:-webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #555a5f), color-stop(100%, #1c1e20));background:-webkit-radial-gradient(center, circle cover, #555a5f 0%, #1c1e20 100%);background:-o-radial-gradient(center, circle cover, #555a5f 0%, #1c1e20 100%);background:-ms-radial-gradient(center, circle cover, #555a5f 0%, #1c1e20 100%);background:radial-gradient(center, circle cover, #555a5f 0%, #1c1e20 100%);background-color:#2b2b2b}.reveal{font-family:"Gotham-Book","Helvetica",Arial,sans-serif;font-size:36px;font-weight:200;letter-spacing:-0.02em;color:#eeeeee}::selection{color:white;background:#f9b8bb;text-shadow:none}.reveal h1,.reveal h2,.reveal h3,.reveal h4,.reveal h5,.reveal h6{margin:0 0 20px 0;color:#f05b62;font-family:"Gotham-Bold",Impact,sans-serif;line-height:0.9em;letter-spacing:0.02em;text-transform:uppercase;text-shadow:0px 0px 6px rgba(0,0,0,0.2)}.reveal h1{text-shadow:0px 0px 6px rgba(0,0,0,0.2)}.reveal a:not(.image){color:#01a9b4;text-decoration:none;-webkit-transition:color 0.15s ease;-moz-transition:color 0.15s ease;-ms-transition:color 0.15s ease;-o-transition:color 0.15s ease;transition:color 0.15s ease}.reveal a:not(.image):hover{color:#f9b8bb;text-shadow:none;border:none}.reveal .roll span:after{color:#fff;background:#01a9b4}.reveal section img{margin:15px;background:rgba(255,255,255,0.12);border:4px solid #eee;box-shadow:0 0 10px rgba(0,0,0,0.15);-webkit-transition:all 0.2s linear;-moz-transition:all 0.2s linear;-ms-transition:all 0.2s linear;-o-transition:all 0.2s linear;transition:all 0.2s linear}.reveal a:hover img{background:rgba(255,255,255,0.2);border-color:#01a9b4;box-shadow:0 0 20px rgba(0,0,0,0.55)}.reveal .controls div.left,.reveal .controls div.left.enabled{border-right-color:#01a9b4}.reveal .controls div.right,.reveal .controls div.right.enabled{border-left-color:#01a9b4}.reveal .controls div.up,.reveal .controls div.up.enabled{border-bottom-color:#01a9b4}.reveal .controls div.down,.reveal .controls div.down.enabled{border-top-color:#01a9b4}.reveal .controls div.left.enabled:hover{border-right-color:#f9b8bb}.reveal .controls div.right.enabled:hover{border-left-color:#f9b8bb}.reveal .controls div.up.enabled:hover{border-bottom-color:#f9b8bb}.reveal .controls div.down.enabled:hover{border-top-color:#f9b8bb}.reveal .progress{background:rgba(0,0,0,0.2)}.reveal .progress span{background:#01a9b4;-webkit-transition:width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);-moz-transition:width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);-ms-transition:width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);-o-transition:width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);transition:width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985)}.reveal footer{position:fixed;height:40px;width:100%;bottom:3px;left:0;z-index:10;font-size:35%;text-align:right;background-image:url(../images/pink-logo.png);background-repeat:no-repeat;background-size:auto 100%}.reveal footer .copyright{margin:15px 5px 0 100px}.reveal footer .copyright a img{vertical-align:middle}.left-align{text-align:left}.right-align{text-align:right}.left{float:left}.right{float:right}.clear{clear:both}.blue{color:#01a9b4}.green{color:#92BB44}.yellow{color:#EDAB23}.pink{color:#F05B62}.red{color:#8B0036}*/
+
+
+
