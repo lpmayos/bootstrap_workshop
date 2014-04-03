@@ -1,4 +1,4 @@
-pyladiesbcn-debianconf
-======================
+pyladiesbcn
+===========
 
-Pyladies BCN Slides Presentation for Women Debian Conf. Barcelona 2014
+HTML & CSS & Bootstrap workshop for pyladies bcn
